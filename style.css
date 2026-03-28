@@ -1,0 +1,210 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+background:#111;
+padding:15px 50px;
+z-index:100;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:600;
+color:#00ffff;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+}
+
+.navbar ul li{
+margin-left:25px;
+}
+
+.navbar ul li a{
+text-decoration:none;
+color:white;
+font-size:16px;
+transition:0.3s;
+}
+
+.navbar ul li a:hover{
+color:#00ffff;
+}
+
+section{
+padding:100px 10%;
+}
+
+/* HOME */
+
+.home{
+display:flex;
+align-items:center;
+justify-content:space-between;
+min-height:100vh;
+}
+
+/* .home-content h1{
+font-size:45px;
+} */
+
+
+.home-content span{
+color:#00ffff;
+}
+
+.home-content p{
+margin:15px 0;
+max-width:500px;
+}
+
+.btn{
+display:inline-block;
+padding:10px 25px;
+background:#00ffff;
+color:black;
+border-radius:25px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+.home-img img{
+width:280px;
+/* border-radius:50%;
+border:4px solid #00ffff; */
+}
+
+/* ABOUT */
+
+.about{
+text-align:center;
+}
+
+.about h2{
+margin-bottom:20px;
+font-size:32px;
+color:#00ffff;
+}
+
+/* SKILLS */
+
+.skills{
+text-align:center;
+}
+
+.skill-box{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:#111;
+padding:30px;
+width:220px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card i{
+font-size:35px;
+color:#00ffff;
+margin-bottom:10px;
+}
+
+/* CONTACT */
+
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#000;
+}
+
+.contact{
+text-align:center;
+padding:60px 20px;
+}
+
+.contact-container{
+max-width:600px;
+margin:auto;
+}
+
+.contact-form{
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:14px;
+}
+
+.contact-form button{
+padding:12px;
+border:none;
+background:#007bff;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.contact-form button:hover{
+background:#0056b3;
+}
+
+.social{
+margin-top:25px;
+}
+
+.social a{
+font-size:22px;
+margin:0 10px;
+color:#333;
+}
+
+.social a:hover{
+color:#007bff;
+}
