@@ -1,76 +1,29 @@
-const text = ["Frontend Developer","React Developer","Web Developer"]
+// 1. Typing Animation
+new Typed("#typing", {
+    strings: ["Software Developer", "Java Developer", "Backend Developer"],
+    typeSpeed: 80,
+    backSpeed: 40,
+    loop: true
+});
 
-let i=0
-let j=0
-let currentText=""
-let isDeleting=false
+// 2. SPA Navigation (Section Switching)
+function showSection(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('section');
+    sections.forEach(s => {
+        s.classList.remove('active-section');
+    });
 
-function type(){
+    // Show selected section
+    const activeSection = document.getElementById(sectionId);
+    activeSection.classList.add('active-section');
 
-currentText = text[i]
+    // Update Nav Active State
+    const links = document.querySelectorAll('.nav-links a');
+    links.forEach(l => l.classList.remove('active'));
 
-if(!isDeleting){
-document.getElementById("typing").textContent = currentText.substring(0,j++)
-}else{
-document.getElementById("typing").textContent = currentText.substring(0,j--)
+    document.getElementById('link-' + sectionId).classList.add('active');
+
+    // Scroll to top when switching
+    window.scrollTo(0, 0);
 }
-
-if(j==currentText.length){
-isDeleting=true
-setTimeout(type,1000)
-return
-}
-
-if(j==0){
-isDeleting=false
-i++
-if(i==text.length){
-i=0
-}
-}
-
-setTimeout(type,120)
-
-}
-
-type()
-document.querySelector(".contact-form").addEventListener("submit",function(e){
-    e.preventDefault()
-    alert("message sent successfully")
-})
-
-let text2=["Hi", "Im" ,"Jayaraj"]
-let k=0
-let l=0
-let letter=""
-let istemp=false
-// function type1()
-// {
-//     letter=text2[k]
-//     if(!istemp)
-//     {
-//         document.getElementById("type1").innerHTML=letter.substring(0,l++)    
-//     }
-//     else{
-//          document.getElementById("type1").innerHTML=letter.substring(0,l--)
-//     }
-
-//     if(l==letter.length)
-//     {
-//         istemp=true
-//         setTimeout(type1,1000)
-//         return
-//     }
-//     if(l==0)
-//     {
-//     istemp=false
-//     k++
-    
-//     if(k==text2.length)
-//     {
-//         k=0
-//     }  
-//     }
-//     setTimeout(type1,120)
-// }
-// type1()

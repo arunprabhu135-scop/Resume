@@ -1,156 +1,129 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ARUN PRABHU | Frontend Developer</title>
-
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bala | Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-<nav class="navbar">
+    <nav>
+        <div class="logo">Bala<span>.</span></div>
+        <ul class="nav-links">
+            <li><a onclick="showSection('home')" id="link-home" class="active">Home</a></li>
+            <li><a onclick="showSection('about')" id="link-about">About Me</a></li>
+            <li><a onclick="showSection('projects')" id="link-projects">Projects</a></li>
+            <li><a onclick="showSection('resume')" id="link-resume">My Resume</a></li>
+            <li><a onclick="showSection('contact')" id="link-contact">Contact Me</a></li>
+        </ul>
+    </nav>
 
-<h2 class="logo">Portfolio</h2>
+    <section id="home" class="active-section">
+        <div class="container">
+            <div class="profile-glow">
+                <img src="bg.jpg.png" alt="Bala"> </div>
+            <div class="hero-text">
+                <h3>Hi, I'm a <span id="typing"></span></h3>
+                <h1>Palpandi M</h1>
+                <p>Java Developer specialized in backend architecture and high-performance APIs.</p>
+                <div class="btns">
+                    <a href="#" class="btn btn-cyan">Download CV</a>
+                    <button class="btn btn-outline" onclick="showSection('projects')">My Projects</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<ul class="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+    <section id="about">
+        <div class="container">
+            <div class="content-box">
+                <h2 class="section-title">About Me</h2>
+                <p>Motivated Java Developer with strong knowledge of <b> Core Java, Advanced Java, Spring Boot,
+                    and MySQL. </b> Skilled in <b> Object-Oriented programming(OOP),backend development, and
+                        application logic design.
+                    </b> Hand-onexperience building Java applications andimplementing <b> clean, scalable code solutions.</b> Seeking an<b>
+                        entry-level Java/Backend Developer role
+                    </b> to contribute technical skills and grow in sofware development.
+                </p>
+                <div class="skills-grid">
+                    <span class="tag">Core Java</span> <span class="tag">Adanced Java</span>
+                    <span class="tag">MySQL</span> <span class="tag">Git and Github</span>
+                    <span class="tag">Spring Boot</span> <span class="tag">HTML5</span>
+                    <span class="tag">CSS</span> <span class="tag">JavaScript</span>
+                    <span class="tag">REACT</span> <span class="tag">Node.js</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</nav>
-</header>
+    <section id="projects" style="flex-direction: column;">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>E-Commerce Backend</h3>
+                <p>Spring Boot & JWT Auth</p>
+            </div>
+            <div class="card">
+                <h3>Banking System</h3>
+                <p>Microservices Architecture</p>
+            </div>
+        </div>
+    </section>
 
+    <section id="resume" style="flex-direction: column;">
+        <h2 class="section-title">My Resume</h2>
+        <div class="resume-container">
+            <div class="res-col">
+                <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                <div class="res-item">
+                    <h4>Junior Java Developer</h4>
+                    <p>2026 - Present</p>
+                </div>
+                <div class="res-item">
+                    <h4>Web Development</h4>
+                    <p>3 Months</p>
+                </div>
+            </div>
+            <div class="res-col">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="res-item">
+                    <h4>P.G.Diploma in Computer Application</h4>
+                    <p>2023 - 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- HOME SECTION -->
-<section id="home" class="home">
+    <section id="contact">
+        <div class="container">
+            <div class="content-box">
+                <h2 class="section-title">Contact Me</h2>
+                <p>Email: palpandijava@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/palpandi02" target="_blank">
+                        <i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Palpandii" target="_blank">
+                        <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea rows="5" placeholder="Message"></textarea>
+                <button type="button" class="btn btn-cyan">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-<div class="home-content">
-
-<h1 class="hero-title">
-Hi I'm <span class="name">ARUN PRABHU</span>
-</h1>
-
-<h3 class="hero-role">
-<span id="typing"></span>
-</h3>
-
-<p class="hero-text">
-I am passionate about building modern and responsive web applications.
-I specialize in HTML, CSS, JavaScript and React.
-</p>
-
-<div class="hero-buttons">
-
-<a href="#contact" class="btn">Let's Connect</a>
- 
-
-<a href="#" class="btn btn-outline">
-<i class="fa-solid fa-download"></i> Download CV
-</a>
-
-</div>
-
-
-
-</div>
-
-
-<div class="home-img">
-<img src="arun.pgn.jpeg" alt="ARUN PRABHU Profile">
-</div>
-
-</section>
-
-
-<!-- ABOUT -->
-<section id="about" class="about">
-
-<h2 class="section-title">About Me</h2>
-
-<p>
-I completed my  BCOM in 2023 and worked as a Web Developer Intern.
-I enjoy creating modern responsive websites and learning new
-technologies in frontend and backend development.
-</p>
-
-</section>
-
-
-<!-- SKILLS -->
-<section id="skills" class="skills">
-
-<h2 class="section-title">My Skills</h2>
-
-<div class="skill-box">
-
-<div class="card">
-<i class="fa-solid fa-code"></i>
-<h3>Frontend</h3>
-<p>HTML, CSS, JavaScript, React</p>
-</div>
-
-
-</div>
-
-</section>
-
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-
-<h2 class="section-title">Contact Me</h2>
-
-<div class="contact-container">
-
-<form class="contact-form">
-
-<input type="text" placeholder="Your Name" required>
-
-<input type="email" placeholder="Your Email" required>
-
-<input type="text" placeholder="Subject">
-
-<textarea rows="5" placeholder="Your Message" required></textarea>
-
-<button type="submit" class="btn">Send Message</button>
-
-</form>
-
-
-<div class="social">
-
-<a href="https://github.com/arunprabhu135-scop/arun"><i class="fa-brands fa-github"></i></a>
-<a href="https://www.linkedin.com/in/arun-prabhu-a617a43ba?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fa-brands fa-linkedin"></i></a>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- FOOTER -->
-<footer>
-<p>© 2023 ARUN PRABHU | All Rights Reserved</p>
-</footer>
-
-<script src="Script.js"></script>
-
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
 </body>
+
+</html>
+
 </html>
